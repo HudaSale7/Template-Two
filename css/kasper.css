@@ -360,7 +360,7 @@ ul {
 
 .services-content {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     padding-top: 60px;
     gap: 50px 50px;
 }
@@ -394,6 +394,11 @@ ul {
     .services .services-content .col-info {
         flex-direction: column;
         text-align: center;
+    }
+}
+@media (max-width: 1200px) {
+    .services-content {
+        grid-template-columns: repeat(1, 1fr);
     }
 }
 
@@ -494,7 +499,7 @@ ul {
 .portfolio-content .album {
     padding-top: 60px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(4, 1fr);
 }
 
 .portfolio-content .album .col {
@@ -555,7 +560,7 @@ ul {
 
 @media (max-width: 1200px) {
     .portfolio-content .album {
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-template-columns: repeat(2, 1fr);
     }
     .portfolio-content .album .col .col-img:hover .img-info  {
         height: 100px;
@@ -565,7 +570,7 @@ ul {
 
 @media (max-width: 767px) {
     .portfolio-content .album {
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-template-columns: repeat(1, 1fr);
     }
     .portfolio-content .album .col .col-img:hover .img-info {
         height: 100px;
